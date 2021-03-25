@@ -1,0 +1,27 @@
+{
+  "name": "@rbxts/slotted-data-manager",
+  "version": "1.0.0",
+  "description": "A data manager that has full autocomplete for retrieving data",
+  "main": "out/init.lua",
+  "scripts": {
+    "prepublishOnly": "rbxtsc"
+  },
+  "keywords": [],
+  "author": "xethlyx",
+  "license": "ISC",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^1.0.0-types.0",
+    "@rbxts/types": "^1.0.465"
+  },
+  "dependencies": {
+    "@rbxts/object-utils": "^1.0.4"
+  }
+}
