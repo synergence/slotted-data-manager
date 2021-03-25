@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/slotted-data-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A data manager that has full autocomplete for retrieving data",
   "main": "out/init.lua",
   "scripts": {
