@@ -53,6 +53,25 @@ serverDispatcher.handle('newSave', (player, saveNumber) => {
 });
 ```
 
+Retrieving data can be done by one of two methods, depending on your use case:
+```ts
+Players.PlayerAdded.Connect(player => {
+    // when you don't know whether it exists or not, for ex. when it's loading
+    const data = dataManager.waitForData(player);
+    if (!data) return;
+
+    // do stuff
+});
+
+serverDispatcher.handle('getGold', (player) => {
+    // when you know it already exists
+    const data = dataManager.data.get(player);
+    if (!data) return false;
+
+    return data.gold;
+});
+```
+
 To check if a save exists:
 ```ts
 serverDispatcher.handle('saveExists', (player, saveNumber) => {
