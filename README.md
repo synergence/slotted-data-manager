@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This library is discontinued. Libraries such as ProfileService or Datastore2 are much better alternaties.
+
 # @rbxts/slotted-data-manager
 
 **IMPORTANT**: This is a very hands-on process - the data manager does NOTHING behind the scenes without your consent!
